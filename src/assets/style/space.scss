@@ -1,0 +1,549 @@
+@mixin space($type, $side, $size) {
+  $size: $size * 0.25rem;
+  @if $side == "all" {
+    @if $type == "margin" {
+      margin: $size !important;
+    } @else if $type == "padding" {
+      padding: $size !important;
+    }
+  } @else if $side == "t" {
+    @if $type == "margin" {
+      margin-top: $size !important;
+    } @else if $type == "padding" {
+      padding-top: $size !important;
+    }
+  } @else if $side == "r" {
+    @if $type == "margin" {
+      margin-right: $size !important;
+    } @else if $type == "padding" {
+      padding-right: $size !important;
+    }
+  } @else if $side == "b" {
+    @if $type == "margin" {
+      margin-bottom: $size !important;
+    } @else if $type == "padding" {
+      padding-bottom: $size !important;
+    }
+  } @else if $side == "l" {
+    @if $type == "margin" {
+      margin-left: $size !important;
+    } @else if $type == "padding" {
+      padding-left: $size !important;
+    }
+  } @else if $side == "x" {
+    @if $type == "margin" {
+      margin-right: $size !important;
+      margin-left: $size !important;
+    } @else if $type == "padding" {
+      padding-right: $size !important;
+      padding-left: $size !important;
+    }
+  } @else if $side == "y" {
+    @if $type == "margin" {
+      margin-top: $size !important ;
+      margin-bottom: $size !important;
+    } @else if $type == "padding" {
+      padding-top: $size !important;
+      padding-bottom: $size !important;
+    }
+  }
+}
+
+// PADDING
+.p-0 {
+  @include space("padding", "all", 0);
+}
+.p-1 {
+  @include space("padding", "all", 1);
+}
+.p-2 {
+  @include space("padding", "all", 2);
+}
+.p-3 {
+  @include space("padding", "all", 3);
+}
+.p-4 {
+  @include space("padding", "all", 4);
+}
+.p-5 {
+  @include space("padding", "all", 5);
+}
+.p-6 {
+  @include space("padding", "all", 6);
+}
+.p-7 {
+  @include space("padding", "all", 7);
+}
+.p-8 {
+  @include space("padding", "all", 8);
+}
+.p-9 {
+  @include space("padding", "all", 9);
+}
+.p-10 {
+  @include space("padding", "all", 10);
+}
+
+.py-0 {
+  @include space("padding", "y", 0);
+}
+.py-1 {
+  @include space("padding", "y", 1);
+}
+.py-2 {
+  @include space("padding", "y", 2);
+}
+.py-3 {
+  @include space("padding", "y", 3);
+}
+.py-4 {
+  @include space("padding", "y", 4);
+}
+.py-5 {
+  @include space("padding", "y", 5);
+}
+.py-6 {
+  @include space("padding", "y", 6);
+}
+.py-7 {
+  @include space("padding", "y", 7);
+}
+.py-8 {
+  @include space("padding", "y", 8);
+}
+.py-9 {
+  @include space("padding", "y", 9);
+}
+.py-10 {
+  @include space("padding", "y", 10);
+}
+
+.px-0 {
+  @include space("padding", "x", 0);
+}
+.px-1 {
+  @include space("padding", "x", 1);
+}
+.px-2 {
+  @include space("padding", "x", 2);
+}
+.px-3 {
+  @include space("padding", "x", 3);
+}
+.px-4 {
+  @include space("padding", "x", 4);
+}
+.px-5 {
+  @include space("padding", "x", 5);
+}
+.px-6 {
+  @include space("padding", "x", 6);
+}
+.px-7 {
+  @include space("padding", "x", 7);
+}
+.px-8 {
+  @include space("padding", "x", 8);
+}
+.px-9 {
+  @include space("padding", "x", 9);
+}
+.px-10 {
+  @include space("padding", "x", 10);
+}
+
+.pt-0 {
+  @include space("padding", "t", 0);
+}
+.pt-1 {
+  @include space("padding", "t", 1);
+}
+.pt-2 {
+  @include space("padding", "t", 2);
+}
+.pt-3 {
+  @include space("padding", "t", 3);
+}
+.pt-4 {
+  @include space("padding", "t", 4);
+}
+.pt-5 {
+  @include space("padding", "t", 5);
+}
+.pt-6 {
+  @include space("padding", "t", 6);
+}
+.pt-7 {
+  @include space("padding", "t", 7);
+}
+.pt-8 {
+  @include space("padding", "t", 8);
+}
+.pt-9 {
+  @include space("padding", "t", 9);
+}
+.pt-10 {
+  @include space("padding", "t", 10);
+}
+
+.pr-0 {
+  @include space("padding", "r", 0);
+}
+.pr-1 {
+  @include space("padding", "r", 1);
+}
+.pr-2 {
+  @include space("padding", "r", 2);
+}
+.pr-3 {
+  @include space("padding", "r", 3);
+}
+.pr-4 {
+  @include space("padding", "r", 4);
+}
+.pr-5 {
+  @include space("padding", "r", 5);
+}
+.pr-6 {
+  @include space("padding", "r", 6);
+}
+.pr-7 {
+  @include space("padding", "r", 7);
+}
+.pr-8 {
+  @include space("padding", "r", 8);
+}
+.pr-9 {
+  @include space("padding", "r", 9);
+}
+.pr-10 {
+  @include space("padding", "r", 10);
+}
+
+.pb-0 {
+  @include space("padding", "b", 0);
+}
+.pb-1 {
+  @include space("padding", "b", 1);
+}
+.pb-2 {
+  @include space("padding", "b", 2);
+}
+.pb-3 {
+  @include space("padding", "b", 3);
+}
+.pb-4 {
+  @include space("padding", "b", 4);
+}
+.pb-5 {
+  @include space("padding", "b", 5);
+}
+.pb-6 {
+  @include space("padding", "b", 6);
+}
+.pb-7 {
+  @include space("padding", "b", 7);
+}
+.pb-8 {
+  @include space("padding", "b", 8);
+}
+.pb-9 {
+  @include space("padding", "b", 9);
+}
+.pb-10 {
+  @include space("padding", "b", 10);
+}
+
+.pl-0 {
+  @include space("padding", "l", 0);
+}
+.pl-1 {
+  @include space("padding", "l", 1);
+}
+.pl-2 {
+  @include space("padding", "l", 2);
+}
+.pl-3 {
+  @include space("padding", "l", 3);
+}
+.pl-4 {
+  @include space("padding", "l", 4);
+}
+.pl-5 {
+  @include space("padding", "l", 5);
+}
+.pl-6 {
+  @include space("padding", "l", 6);
+}
+.pl-7 {
+  @include space("padding", "l", 7);
+}
+.pl-8 {
+  @include space("padding", "l", 8);
+}
+.pl-9 {
+  @include space("padding", "l", 9);
+}
+.pl-10 {
+  @include space("padding", "l", 10);
+}
+
+// MARGIN
+.m-0 {
+  @include space("margin", "all", 0);
+}
+.m-1 {
+  @include space("margin", "all", 1);
+}
+.m-2 {
+  @include space("margin", "all", 2);
+}
+.m-3 {
+  @include space("margin", "all", 3);
+}
+.m-4 {
+  @include space("margin", "all", 4);
+}
+.m-5 {
+  @include space("margin", "all", 5);
+}
+.m-6 {
+  @include space("margin", "all", 6);
+}
+.m-7 {
+  @include space("margin", "all", 7);
+}
+.m-8 {
+  @include space("margin", "all", 8);
+}
+.m-9 {
+  @include space("margin", "all", 9);
+}
+.m-10 {
+  @include space("margin", "all", 10);
+}
+
+.my-0 {
+  @include space("margin", "y", 0);
+}
+.my-1 {
+  @include space("margin", "y", 1);
+}
+.my-2 {
+  @include space("margin", "y", 2);
+}
+.my-3 {
+  @include space("margin", "y", 3);
+}
+.my-4 {
+  @include space("margin", "y", 4);
+}
+.my-5 {
+  @include space("margin", "y", 5);
+}
+.my-6 {
+  @include space("margin", "y", 6);
+}
+.my-7 {
+  @include space("margin", "y", 7);
+}
+.my-8 {
+  @include space("margin", "y", 8);
+}
+.my-9 {
+  @include space("margin", "y", 9);
+}
+.my-10 {
+  @include space("margin", "y", 10);
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-0 {
+  @include space("margin", "x", 0);
+}
+.mx-1 {
+  @include space("margin", "x", 1);
+}
+.mx-2 {
+  @include space("margin", "x", 2);
+}
+.mx-3 {
+  @include space("margin", "x", 3);
+}
+.mx-4 {
+  @include space("margin", "x", 4);
+}
+.mx-5 {
+  @include space("margin", "x", 5);
+}
+.mx-6 {
+  @include space("margin", "x", 6);
+}
+.mx-7 {
+  @include space("margin", "x", 7);
+}
+.mx-8 {
+  @include space("margin", "x", 8);
+}
+.mx-9 {
+  @include space("margin", "x", 9);
+}
+.mx-10 {
+  @include space("margin", "x", 10);
+}
+
+.mt-0 {
+  @include space("margin", "t", 0);
+}
+.mt-1 {
+  @include space("margin", "t", 1);
+}
+.mt-2 {
+  @include space("margin", "t", 2);
+}
+.mt-3 {
+  @include space("margin", "t", 3);
+}
+.mt-4 {
+  @include space("margin", "t", 4);
+}
+.mt-5 {
+  @include space("margin", "t", 5);
+}
+.mt-6 {
+  @include space("margin", "t", 6);
+}
+.mt-7 {
+  @include space("margin", "t", 7);
+}
+.mt-8 {
+  @include space("margin", "t", 8);
+}
+.mt-9 {
+  @include space("margin", "t", 9);
+}
+.mt-10 {
+  @include space("margin", "t", 10);
+}
+.mt-20 {
+  @include space("margin", "t", 20);
+}
+.mt-15 {
+  @include space("margin", "t", 15);
+}
+
+.mr-0 {
+  @include space("margin", "r", 0);
+}
+.mr-1 {
+  @include space("margin", "r", 1);
+}
+.mr-2 {
+  @include space("margin", "r", 2);
+}
+.mr-3 {
+  @include space("margin", "r", 3);
+}
+.mr-4 {
+  @include space("margin", "r", 4);
+}
+.mr-5 {
+  @include space("margin", "r", 5);
+}
+.mr-6 {
+  @include space("margin", "r", 6);
+}
+.mr-7 {
+  @include space("margin", "r", 7);
+}
+.mr-8 {
+  @include space("margin", "r", 8);
+}
+.mr-9 {
+  @include space("margin", "r", 9);
+}
+.mr-10 {
+  @include space("margin", "r", 10);
+}
+
+.mb-0 {
+  @include space("margin", "b", 0);
+}
+.mb-1 {
+  @include space("margin", "b", 1);
+}
+.mb-2 {
+  @include space("margin", "b", 2);
+}
+.mb-3 {
+  @include space("margin", "b", 3);
+}
+.mb-4 {
+  @include space("margin", "b", 4);
+}
+.mb-5 {
+  @include space("margin", "b", 5);
+}
+.mb-6 {
+  @include space("margin", "b", 6);
+}
+.mb-7 {
+  @include space("margin", "b", 7);
+}
+.mb-8 {
+  @include space("margin", "b", 8);
+}
+.mb-9 {
+  @include space("margin", "b", 9);
+}
+.mb-10 {
+  @include space("margin", "b", 10);
+}
+.mb-20 {
+  @include space("margin", "b", 20);
+}
+
+.ml-0 {
+  @include space("margin", "l", 0);
+}
+.ml-1 {
+  @include space("margin", "l", 1);
+}
+.ml-2 {
+  @include space("margin", "l", 2);
+}
+.ml-3 {
+  @include space("margin", "l", 3);
+}
+.ml-4 {
+  @include space("margin", "l", 4);
+}
+.ml-5 {
+  @include space("margin", "l", 5);
+}
+.ml-6 {
+  @include space("margin", "l", 6);
+}
+.ml-7 {
+  @include space("margin", "l", 7);
+}
+.ml-8 {
+  @include space("margin", "l", 8);
+}
+.ml-9 {
+  @include space("margin", "l", 9);
+}
+.ml-10 {
+  @include space("margin", "l", 10);
+}
+
+.ml-15 {
+  @include space("margin", "l", 15);
+}
+
+.ml-48 {
+  margin-left: 48px;
+}

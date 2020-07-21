@@ -1,0 +1,12 @@
+{
+  "web": {
+    "client_id": "926606020488-c6rv1savpt2f4khn5i8f8klei2k4b7lu.apps.googleusercontent.com",
+    "project_id": "extended-argon-283811",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "ke1Qocmu52__yWePYtPVe51A",
+    "redirect_uris": ["http://localhost:8081/user/google/login"],
+    "javascript_origins": ["http://localhost:8081"]
+  }
+}
